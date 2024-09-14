@@ -1,0 +1,23 @@
+def expression(m):
+    z = 1 / ((m ** 0.5)+(2 ** 0.5))
+
+    return z
+
+def is_prime(n):
+    if n <= 1:
+        return False
+
+    for i in range(2, int(n ** 0.5 + 1)):
+        if n % i == 0:
+            return False
+    else:
+        return True
+
+m = int(input("Введіть значення для числа m: "))
+print ("Значення виразу z = ", expression(m))
+
+n = int(input("Введіть значення для числа n: "))
+if is_prime(n):
+    print("Число", n, "є простим.")
+else:
+    print("Число", n, "не є простим.")
