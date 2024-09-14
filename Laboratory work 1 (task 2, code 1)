@@ -1,0 +1,7 @@
+from mod import is_prime
+
+n = int(input("Введіть значення для числа n: "))
+if is_prime(n):
+    print("Число", n, "є простим.")
+else:
+    print("Число", n, "не є простим.")
